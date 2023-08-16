@@ -1,0 +1,15 @@
+<%-include('header.ejs');-%>
+<body>
+    <div class="resultbox">
+        <img class="img" src=<%= Image%>>
+        <a class="link" href="https://www.imdb.com/title/<%= Id%>/"><h2 class="maintitle"><%= Title%></h2></a>
+        <div class="info">
+            <h2 class="rating">⭐<%= Ratings%>/10</h2>
+            <p class="type"><%= Type%></p>
+            <p class="year"><%= Year%></p>
+            <p class="starring"><%= Actors%></p>
+            <p class="plot"><%= Plot%></p>
+        </div>
+    </div>
+</body>
+<%-include('footer.ejs');-%>

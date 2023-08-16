@@ -1,0 +1,197 @@
+/*************Header***************/
+body {
+  background-color: yellow;
+  color: black;
+}
+
+h1 {
+  font-family: "Galada", cursive;
+  color: saddlebrown;
+  margin-left: 75px;
+  padding-top: 12px;
+  padding-left: 5px;
+}
+
+/*************Main Page***************/
+
+.brandname {
+  width: 70%;
+  height: 60px;
+}
+
+.brand {
+  margin-left: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  float: left;
+}
+
+.box {
+  width: 80%;
+  height: 50px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: darkgoldenrod;
+}
+
+.submit {
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.walls {
+  width: 50%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+input[type="text"] {
+  padding-left: 25px;
+}
+
+.quote {
+  width: 60%;
+  margin-left: 15px;
+}
+
+/*************Results***************/
+
+.resultbox {
+  width: 50%;
+  margin: auto;
+  margin-top: 6.5%;
+  font-size: 1.2rem;
+}
+
+.img {
+  float: left;
+  width: 200px;
+  height: 280px;
+  margin-left: 8%;
+  margin-top: 5%;
+}
+
+.link {
+  text-decoration: none;
+  color: darkolivegreen;
+}
+
+.maintitle {
+  padding-top: 25px;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  margin-left: 45%;
+}
+
+.rating {
+  font-size: 1.3rem;
+}
+
+.plot {
+  margin-top: 6%;
+}
+
+.info{
+  margin-left: 45%;
+}
+
+/*************Footer***************/
+
+.copyright {
+  text-align: center;
+  margin-top: 180px;
+}
+
+/*************TryAgain***************/
+
+.try {
+  text-align: center;
+}
+
+.tryagain {
+  margin: auto;
+  margin-top: 3%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gif {
+  margin: auto;
+  margin-top: 5%;
+}
+
+.gifmovie {
+  margin: auto;
+  margin-top: 10px;
+}
+
+/****************************/
+
+
+/********************************Responsiveness************************************/
+
+@media (min-width: 200px) and (max-width : 768px){
+  
+.walls{
+  width: 80%;
+  height: 100%;
+}
+
+.brandname{
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 90%;
+  margin-top: 20%;
+}
+
+.quote{
+  width: 95%;
+  margin-top: 20%;
+}
+
+.maintitle{
+  margin: auto;
+}
+
+.box{
+  font-size: 100%;
+}
+
+/**************/
+.resultbox{
+  width: 90%;
+  height: 100%;
+  text-align: center;
+}
+
+.img{
+  float: none;
+  margin: auto;
+}
+
+.info{
+  margin: auto;
+}
+
+h3{
+  margin: auto;
+}
+
+.gif {
+  width: 80%;
+}
+
+}
+
+@media (min-width: 769px) and (max-width : 1150px){
+  .resultbox{
+    width: 95%;
+    height: 100%;
+  }
+}
