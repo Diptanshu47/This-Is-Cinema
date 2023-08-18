@@ -1,197 +1,240 @@
-/*************Header***************/
-body {
-  background-color: yellow;
-  color: black;
+/****************Header****************/
+html, body {
+  min-height: 100%;
 }
 
-h1 {
-  font-family: "Galada", cursive;
-  color: saddlebrown;
-  margin-left: 75px;
-  padding-top: 12px;
-  padding-left: 5px;
-}
-
-/*************Main Page***************/
-
-.brandname {
-  width: 70%;
-  height: 60px;
-}
-
-.brand {
-  margin-left: 10px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  float: left;
-}
-
-.box {
-  width: 80%;
-  height: 50px;
-  border-radius: 50px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: darkgoldenrod;
-}
-
-.submit {
-  width: 100px;
-  height: 50px;
-  border-radius: 50px;
-}
-
-.walls {
-  width: 50%;
-  margin: auto;
-  margin-top: 10%;
-}
-
-input[type="text"] {
-  padding-left: 25px;
-}
-
-.quote {
-  width: 60%;
-  margin-left: 15px;
-}
-
-/*************Results***************/
-
-.resultbox {
-  width: 50%;
-  margin: auto;
-  margin-top: 6.5%;
-  font-size: 1.2rem;
-}
-
-.img {
-  float: left;
-  width: 200px;
-  height: 280px;
-  margin-left: 8%;
-  margin-top: 5%;
-}
-
-.link {
-  text-decoration: none;
-  color: darkolivegreen;
-}
-
-.maintitle {
-  padding-top: 25px;
-  font-size: 2rem;
-  margin-bottom: 25px;
-  margin-left: 45%;
-}
-
-.rating {
-  font-size: 1.3rem;
-}
-
-.plot {
-  margin-top: 6%;
-}
-
-.info{
-  margin-left: 45%;
-}
-
-/*************Footer***************/
-
-.copyright {
+body{
+  background-image: linear-gradient(to left top, #003164, #002758, #001d4d, #001441, #010536);
   text-align: center;
-  margin-top: 180px;
+  color: white;
 }
 
-/*************TryAgain***************/
-
-.try {
-  text-align: center;
-}
-
-.tryagain {
+/************************Templates******************************/
+.copyright{
+  width: 75%;
   margin: auto;
-  margin-top: 3%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.gif {
-  margin: auto;
-  margin-top: 5%;
-}
-
-.gifmovie {
-  margin: auto;
-  margin-top: 10px;
-}
-
-/****************************/
-
-
-/********************************Responsiveness************************************/
-
-@media (min-width: 200px) and (max-width : 768px){
-  
+/************************Home******************************/
 .walls{
-  width: 80%;
-  height: 100%;
+  width: 75%;
+  margin: 2.5% auto;
 }
 
-.brandname{
-  width: 100%;
+form{
+  margin: 5% auto;
 }
 
-input[type="text"] {
-  width: 90%;
-  margin-top: 20%;
-}
-
-.quote{
-  width: 95%;
-  margin-top: 20%;
-}
-
-.maintitle{
-  margin: auto;
+.brand{
+  width: 200px;
+  height: 175px;
 }
 
 .box{
-  font-size: 100%;
+  width: 65%;
+  height: 50px;
+  margin: 0 13.5%;
+  border-radius: 25px;
+  background: transparent;
+  color: #003164;
+  border: white solid;
 }
 
-/**************/
-.resultbox{
-  width: 90%;
-  height: 100%;
+input[type="text"] {
+  font-size: 25px;
+  font-weight: 600;
   text-align: center;
+  color: white;
 }
 
-.img{
-  float: none;
-  margin: auto;
+input[type="text"]:focus{
+  outline: none;
+  border: white solid;
+}
+
+input[type="text"]::placeholder{
+  color: white;
+  opacity: 60%;
+}
+
+.submit{
+  width: 150px;
+  height: 45px;
+  border-radius: 5px; 
+  background-color: white;
+  color: #001441;
+  font-size: 20px; 
+  border: none;
+  margin: 2.5%;
+}
+
+.quote{
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  margin-bottom: 7.5%;
+}
+
+.quote h3{
+  font-weight: 100;
+  margin: 0;
+}
+
+.quote p{
+  font-weight: 600;
+  margin: 2.5px;
+}
+
+/****************************Err*******************************/
+.try{
+  width: 75%;
+  margin: 5% auto;
+}
+
+/****************************Results*******************************/
+.resultbox{
+  width: 75%;
+  height: 500px;
+  margin: 5% auto;
+  margin-left: 20.25%;
+  position: relative;
+}
+
+.imagebox{
+  width: 35%;
+  height: 100%;
+  position: absolute;
 }
 
 .info{
-  margin: auto;
+  width: 65%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: left;
 }
 
-h3{
-  margin: auto;
+.info .submit{
+  margin: 0;
 }
 
-.gif {
+.link{
+  font-size: 25px;
+  text-decoration: none;
+  color: wheat;
+}
+
+.link h2{
+  margin: 0;
+  margin-top: 5%;
+}
+
+.details{
+  font-size: 20px;
+}
+
+.ratings{
+  margin-top: 2%;
+}
+
+.plot{
   width: 80%;
 }
 
+.img{
+  width: 75%;
+  margin-top: 1.5%;
 }
 
-@media (min-width: 769px) and (max-width : 1150px){
+/****************************Media-Quries*******************************/
+@media (min-width : 240px) and (max-width:850px){
+  /***home****/
+  .brand{
+    width: 150px;
+    height: 125px;
+  }
+
+  .walls{
+    width: 90%;
+  }
+
+  .box{
+    width: 100%;
+    margin: auto;
+  }
+
+  input[type="text"]{
+    font-size: 18px;
+  }
+
+  .submit{
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    margin-top: 7.5%;
+  }
+
+  .quote{
+    font-size: 15px;
+    margin: 15% auto;
+  }
+
+  /****err***/
+  .gif{
+    width: 100%;
+  }
+
+  /****Results***/
   .resultbox{
-    width: 95%;
+    width: 90%;
     height: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .info{
+    position: static;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .imagebox{
+    position: static;
+    margin: auto;
+    width: 75%;
+  }
+
+  .img{
+    width: 80%;
+    height: auto;
+  }
+
+  .plot{
+    width: 100%;
+  }
+}
+
+@media (min-width:650px) and (max-width : 850px){
+  .imagebox{
+    width: 50%;
+  }
+}
+
+@media (min-width:850px) and (max-width : 1300px){
+  .img{
+    margin: 0;
+    margin-top: 10%;
+    width: 90%;
+  }
+
+  .plot{
+    width: 100%;
+  }
+}
+
+@media (min-width:1000px) and (max-width : 1300px){
+  .img{
+    width: 80%;
   }
 }
